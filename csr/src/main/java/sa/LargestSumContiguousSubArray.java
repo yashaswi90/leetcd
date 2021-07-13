@@ -14,5 +14,6 @@ public class LargestSumContiguousSubArray {
                 max = sum;
             }
         }
+        System.out.println(max);
     }
 }

@@ -20,7 +20,7 @@ public class LongestSubstringWithoutRepeatingCharacters {
         }
 
 //        System.out.println(LongestSubstringWithoutRepeatingCharacters.findLongestSubstring("abcabcbb"));
-//        longestSubstring("pickoutthelongestsubstring");
+        longestSubstring("pickoutthelongestsubstring");
         System.out.println(longSubsting("pwwkew"));
     }
 
