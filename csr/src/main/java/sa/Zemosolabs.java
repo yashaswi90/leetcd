@@ -9,27 +9,27 @@ public class Zemosolabs {
 
     }
 
-    public static int findSlie(int[] arr) {
+    public static int findSlie(int[] A) {
         int count = 0;
         int minIndex = 0;
-        for (int i = 0; i < arr.length; ) {
-            int min = arr[i];
+        for (int i = 0; i < A.length; ) {
+            int min = A[i];
 
-            for (int j = i; j < arr.length; j++) {
+            for (int j = i; j < A.length; j++) {
 
-                if (j + 1 < arr.length) {
-                    if (arr[j] < arr[j + 1] && arr[j] <= min) {
-                        min = arr[j];
+                if (j + 1 < A.length) {
+                    if (A[j] < A[j + 1] && A[j] <= min) {
+                        min = A[j];
                         minIndex = j;
 
                     } else {
-                        if (min > arr[j + 1]) {
-                            min = arr[j + 1];
+                        if (min > A[j + 1]) {
+                            min = A[j + 1];
                             minIndex = j + 1;
 
                         }
                     }
-                } else if (i == arr.length - 1) {
+                } else if (i == A.length - 1) {
                     count++;
                     return count;
                 }

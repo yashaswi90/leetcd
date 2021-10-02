@@ -31,15 +31,24 @@ public class LevelOrderTraversal {
 
 
         Node curr;
+
         while(!queue.isEmpty()){
             curr = queue.poll();
-            System.out.print(curr.data + " ");
-            if(curr.left!=null){
-                queue.add(curr.left);
+            if(curr==null){
+                if(!queue.isEmpty()){
+                    System.out.println(curr.data);
+                }
+            }else{
+                System.out.print(curr.data + " ");
+                if(curr.left!=null){
+                    queue.add(curr.left);
+                }
+                if(curr.right!=null){
+                    queue.add(curr.right);
+                }
             }
-            if(curr.right!=null){
-                queue.add(curr.right);
-            }
+
+
         }
     }
 }

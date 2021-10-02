@@ -2,7 +2,7 @@ package sa;
 
 public class CountWaysToNStairsMSteps {
     public static void main(String[] args) {
-        System.out.println(countWays(3,2));
+        System.out.println(countWays(4,3));
 
     }
 

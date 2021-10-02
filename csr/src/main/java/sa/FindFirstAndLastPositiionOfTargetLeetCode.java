@@ -37,9 +37,9 @@ public class FindFirstAndLastPositiionOfTargetLeetCode {
     public static void main(String[] args) {
 
 //        int nums[] = {1};
-        int nums[] = {5, 7, 7, 8, 8, 10};
+        int nums[] = {5, 7, 7, 8, 8, 8};
 
 
-        Arrays.stream(searchRange(nums, 6)).forEach(System.out::println);
+        Arrays.stream(searchRange(nums, 8)).forEach(System.out::println);
     }
 }
